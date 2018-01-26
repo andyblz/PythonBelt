@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/main">Home</a> <a href="/logout">Logout</a>
+
+    {% for trip in trips %}
+    <h2>{{trip.name}}</h2> <br>
+    {% for user in users%}
+    Planned By: {{user.name}} <br>
+    {% endfor%}
+    Description: {{trip.desc}} <br>
+    Travel Date From:{{trip.td_from}}  <br>
+    Travel Date To:{{trip.td_to}}  <br>
+    {% endfor %}
+
+    <h3>Other users' joining the trip:</h3>
+     {% for user in users%}
+     {{user.name}} <br>
+     {% endfor%}
+</body>
+</html>

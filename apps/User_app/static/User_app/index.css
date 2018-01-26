@@ -1,0 +1,16 @@
+.registration{
+    display: inline-block;
+    vertical-align: top;
+    width: 280px;
+    height: 300px;
+    border: 3px solid black;
+  }
+
+  .login {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    height: 180px;
+    border: 3px solid black;
+    margin-left: 20px;
+  }
